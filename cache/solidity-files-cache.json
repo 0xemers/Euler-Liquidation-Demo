@@ -1,0 +1,2516 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\adaptors\\FlashLoan.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "8ac781f896ff8614e83d6e63bd0bed8f",
+      "sourceName": "contracts/adaptors/FlashLoan.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../modules/Exec.sol",
+        "../modules/Markets.sol",
+        "../modules/DToken.sol",
+        "../Interfaces.sol",
+        "../Utils.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "FlashLoan"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\modules\\Exec.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "ab806d0da0bff889e954ec7b829611f4",
+      "sourceName": "contracts/modules/Exec.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../BaseLogic.sol",
+        "../IRiskManager.sol",
+        "../PToken.sol",
+        "../Interfaces.sol",
+        "../Utils.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Exec",
+        "IDeferredLiquidityCheck"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\modules\\Markets.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "518bcb936274d7b526bf4fc5a333427f",
+      "sourceName": "contracts/modules/Markets.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../BaseLogic.sol",
+        "../IRiskManager.sol",
+        "../PToken.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Markets"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\modules\\DToken.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "ef4b478e89b6d6afc9ff633268441eb8",
+      "sourceName": "contracts/modules/DToken.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../BaseLogic.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "DToken",
+        "IFlashLoan"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\Interfaces.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "5e2006863de2246f24e55d3073ee620b",
+      "sourceName": "contracts/Interfaces.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20",
+        "IERC20Permit",
+        "IERC3156FlashBorrower",
+        "IERC3156FlashLender"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\Utils.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "0b1f325a7b6e876f176f9ba14df89883",
+      "sourceName": "contracts/Utils.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Interfaces.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Utils"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\BaseLogic.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "36ef9b5069f2f16435d6de4e30935b2c",
+      "sourceName": "contracts/BaseLogic.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BaseModule.sol",
+        "./BaseIRM.sol",
+        "./Interfaces.sol",
+        "./Utils.sol",
+        "./vendor/RPow.sol",
+        "./IRiskManager.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "BaseLogic"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\IRiskManager.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "0f25efdaa0bc04389950cc8f8d1bd5db",
+      "sourceName": "contracts/IRiskManager.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Storage.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IRiskManager"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\PToken.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "4d37c0d7cf93d96378fe510cf32e3c4f",
+      "sourceName": "contracts/PToken.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Interfaces.sol",
+        "./Utils.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "PToken"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\BaseModule.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "00500a0028b83a9ca67ab830cf9eb3f9",
+      "sourceName": "contracts/BaseModule.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Base.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "BaseModule"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\BaseIRM.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "15742b6b14a7d77b7811b266b1c6a5e6",
+      "sourceName": "contracts/BaseIRM.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BaseModule.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "BaseIRM"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\vendor\\RPow.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "e1a3d0b87c0e2504999df8f52f805c0b",
+      "sourceName": "contracts/vendor/RPow.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "RPow"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\Base.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "3bdf28a0475a9227b99d01898bdf56a8",
+      "sourceName": "contracts/Base.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Storage.sol",
+        "./Events.sol",
+        "./Proxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Base"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\Storage.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "0505c6bf6c12590838cc44f122acc574",
+      "sourceName": "contracts/Storage.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Constants.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Storage"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\Events.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "70c740d5f54dcd412d8097d00febac4b",
+      "sourceName": "contracts/Events.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Storage.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Events"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\Proxy.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "6e6732af23342963829a275fdbf4ec23",
+      "sourceName": "contracts/Proxy.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Proxy"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\Constants.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "5a542d8926ffec5a01fca594d6fb16f1",
+      "sourceName": "contracts/Constants.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Constants"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\mining\\EulStakes.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "c36e5d181f7712cb1ce9f127ccc3b09d",
+      "sourceName": "contracts/mining/EulStakes.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Utils.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EulStakes"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\mining\\EulDistributor.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "70c8082679d6914874e26d4b44d43522",
+      "sourceName": "contracts/mining/EulDistributor.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../vendor/MerkleProof.sol",
+        "../Utils.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EulDistributor",
+        "IEulStakes"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\vendor\\MerkleProof.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "288e0e8f4a8a7408df1ef68b3389b1a9",
+      "sourceName": "contracts/vendor/MerkleProof.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MerkleProof"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\views\\EulerSimpleLens.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "345c2d4b1033786311ef14119397560c",
+      "sourceName": "contracts/views/EulerSimpleLens.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Euler.sol",
+        "../modules/EToken.sol",
+        "../modules/Markets.sol",
+        "../modules/Exec.sol",
+        "../BaseIRMLinearKink.sol",
+        "../IRiskManager.sol",
+        "../Storage.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EulerSimpleLens",
+        "IExec"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\Euler.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "19cb2d65e37bec6f68cded445be539c4",
+      "sourceName": "contracts/Euler.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Base.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Euler"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\modules\\EToken.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "9a4ef4a657545d5f97bb335aa8adc8a6",
+      "sourceName": "contracts/modules/EToken.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../BaseLogic.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EToken"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\BaseIRMLinearKink.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "0af486c38e4d4c9f399e6e665a646ccd",
+      "sourceName": "contracts/BaseIRMLinearKink.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BaseIRM.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "BaseIRMLinearKink"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\views\\EulerGeneralView.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "a9b3e51c8ce762262a4bea0ef975ae92",
+      "sourceName": "contracts/views/EulerGeneralView.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Euler.sol",
+        "../Storage.sol",
+        "../modules/EToken.sol",
+        "../modules/Markets.sol",
+        "../BaseIRMLinearKink.sol",
+        "../vendor/RPow.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EulerGeneralView",
+        "IExec"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\test\\TestModule.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "06abb536976a0a1dac343d668c5b85dc",
+      "sourceName": "contracts/test/TestModule.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../BaseLogic.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TestModule"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\test\\JunkMarketsUpgrade.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "db053164492445fda02acda8f643a7fc",
+      "sourceName": "contracts/test/JunkMarketsUpgrade.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../BaseLogic.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "JunkMarketsUpgrade"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\test\\JunkETokenUpgrade.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "47bfaf0e39bbf1f08aaca03daeafac5c",
+      "sourceName": "contracts/test/JunkETokenUpgrade.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../BaseLogic.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "JunkETokenUpgrade"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\modules\\Swap.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "6535f31bb3d8c3f7d23607be933ff728",
+      "sourceName": "contracts/modules/Swap.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../BaseLogic.sol",
+        "../vendor/ISwapRouter.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Swap"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\vendor\\ISwapRouter.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "1e43a3ac8c059949347eb269a7130c35",
+      "sourceName": "contracts/vendor/ISwapRouter.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IUniswapV3SwapCallback.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "ISwapRouter"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\vendor\\IUniswapV3SwapCallback.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "b5366f6b631b11ed4d761900d72503ae",
+      "sourceName": "contracts/vendor/IUniswapV3SwapCallback.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV3SwapCallback"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\modules\\RiskManager.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "c34bbe8b335bf26d46ace340fbe02009",
+      "sourceName": "contracts/modules/RiskManager.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../BaseLogic.sol",
+        "../IRiskManager.sol",
+        "../vendor/TickMath.sol",
+        "../vendor/FullMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IChainlinkAggregatorV2V3",
+        "IUniswapV3Factory",
+        "IUniswapV3Pool",
+        "RiskManager"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\vendor\\TickMath.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "fffc523de9acf5180901723966d841e9",
+      "sourceName": "contracts/vendor/TickMath.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TickMath"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\vendor\\FullMath.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "b1bfa3580f8aafcd38b5ab619aeb2f04",
+      "sourceName": "contracts/vendor/FullMath.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "FullMath"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\test\\MockUniswapV3Pool.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "de66379f6021be297c7e1608f057af80",
+      "sourceName": "contracts/test/MockUniswapV3Pool.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../vendor/TickMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IUniswapV3PoolDeployer",
+        "MockUniswapV3Pool"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\test\\MockUniswapV3Factory.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "1e6d6b7ca2c25c81b38cb5c399652333",
+      "sourceName": "contracts/test/MockUniswapV3Factory.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./MockUniswapV3Pool.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MockUniswapV3Factory"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\test\\FlashLoanNativeTest.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "ed31634077d36873fb50f878c68313ce",
+      "sourceName": "contracts/test/FlashLoanNativeTest.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Interfaces.sol",
+        "../modules/DToken.sol",
+        "../modules/Markets.sol",
+        "../modules/Exec.sol",
+        "../modules/DToken.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "FlashLoanNativeTest"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\test\\InvariantChecker.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "b9cd166fcd6663405cb4ce3523210ded",
+      "sourceName": "contracts/test/InvariantChecker.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol",
+        "../Constants.sol",
+        "../Euler.sol",
+        "../modules/Markets.sol",
+        "../modules/EToken.sol",
+        "../modules/DToken.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "InvariantChecker"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\node_modules\\hardhat\\console.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "4ff3cd2f6272c9a6516e9ee4f2b967d3",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\modules\\Installer.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "7169586149d4f1aa067e02e3468c3cfb",
+      "sourceName": "contracts/modules/Installer.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../BaseModule.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Installer"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\modules\\interest-rate-models\\test\\IRMZero.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "2d05ab0f70c69e3c99bc37c9aba8281f",
+      "sourceName": "contracts/modules/interest-rate-models/test/IRMZero.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../../BaseIRM.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IRMZero"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\modules\\interest-rate-models\\test\\IRMLinear.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "5de005bb1016de240169bf0ad61f05ed",
+      "sourceName": "contracts/modules/interest-rate-models/test/IRMLinear.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../../BaseIRM.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IRMLinear"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\modules\\interest-rate-models\\test\\IRMFixed.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "5bbcc59b42d0abf8fa9df6ef4a470a5e",
+      "sourceName": "contracts/modules/interest-rate-models/test/IRMFixed.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../../BaseIRM.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IRMFixed"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\modules\\Governance.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "8b42b30ee1fedd846d1087f10210e927",
+      "sourceName": "contracts/modules/Governance.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../BaseLogic.sol",
+        "../BaseIRM.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Governance"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\modules\\interest-rate-models\\IRMDefault.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "5f0308574223672b7b40f5cfa057a6a4",
+      "sourceName": "contracts/modules/interest-rate-models/IRMDefault.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../BaseIRMLinearKink.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IRMDefault"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\modules\\interest-rate-models\\IRMClassStable.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "5743f0f72373fc2864b7d96158a59a65",
+      "sourceName": "contracts/modules/interest-rate-models/IRMClassStable.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../BaseIRMLinearKink.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IRMClassStable"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\modules\\interest-rate-models\\IRMClassMidCap.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "eb4dd0883243f2d9d36326dc9c4845ee",
+      "sourceName": "contracts/modules/interest-rate-models/IRMClassMidCap.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../BaseIRMLinearKink.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IRMClassMidCap"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\modules\\interest-rate-models\\IRMClassMega.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "ae2f56c5e4bb320fd9db55580915b84e",
+      "sourceName": "contracts/modules/interest-rate-models/IRMClassMega.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../BaseIRMLinearKink.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IRMClassMega"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\modules\\interest-rate-models\\IRMClassMajor.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "e29a4691f6221133f360b222af8a4101",
+      "sourceName": "contracts/modules/interest-rate-models/IRMClassMajor.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../BaseIRMLinearKink.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IRMClassMajor"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\test\\TestERC20.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "cefbc27d8e3f20b60579b25e7a08ef39",
+      "sourceName": "contracts/test/TestERC20.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TestERC20"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\test\\SimpleUniswapPeriphery.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "e661b521e13a0580f819a00b0655476b",
+      "sourceName": "contracts/test/SimpleUniswapPeriphery.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Interfaces.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IUniswapV3Pool",
+        "SimpleUniswapPeriphery"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\test\\FlashLoanAdaptorTest.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "b617b52f59c646e8fbb033a41106b865",
+      "sourceName": "contracts/test/FlashLoanAdaptorTest.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Interfaces.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "FlashLoanAdaptorTest"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\test\\FlashLoanAdaptorTest2.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "c33d88dd67f2b0de44fc09e1569bcd64",
+      "sourceName": "contracts/test/FlashLoanAdaptorTest2.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./FlashLoanAdaptorTest.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "FlashLoanAdaptorTest2"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\modules\\Liquidation.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "bc9014f68b189812f9823c0feb02c398",
+      "sourceName": "contracts/modules/Liquidation.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../BaseLogic.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Liquidation"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\mining\\EulDistributorOwner.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "bb0cb0eab4b865981ab8c426e49ec150",
+      "sourceName": "contracts/mining/EulDistributorOwner.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EulDistributorOwner",
+        "IEulDistributor"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\oracles\\chainlinkBasedOracle.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "11889a031cdd22d572b4f412f77dee68",
+      "sourceName": "contracts/oracles/chainlinkBasedOracle.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ChainlinkBasedOracle",
+        "IChainlinkAggregatorV2V3"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\oracles\\WSTETHOracle.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "8f7e15e5398df2971c3701dda7256be9",
+      "sourceName": "contracts/oracles/WSTETHOracle.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IChainlinkAggregatorV2V3",
+        "IStETH",
+        "WSTETHOracle"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\test\\MockEACAggregatorProxy.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "be7fe85a753a79cfa242edda0cc391b4",
+      "sourceName": "contracts/test/MockEACAggregatorProxy.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MockAggregatorProxy"
+      ]
+    },
+    "F:\\TPG Learning\\RA_Project\\EulerDemo\\contracts\\test\\MockStETH.sol": {
+      "lastModificationDate": 1240428288000,
+      "contentHash": "3d3b250d3d2da9ff0bcdc789bc072875",
+      "sourceName": "contracts/test/MockStETH.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000000
+          },
+          "outputSelection": {
+            "contracts/Storage.sol": {
+              "*": [
+                "storageLayout"
+              ]
+            },
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MockStETH"
+      ]
+    }
+  }
+}
